@@ -2,8 +2,8 @@
   ******************************************************************************
   * @file    stm32f37x.h
   * @author  MCD Application Team
-  * @version V1.0.0
-  * @date    20-September-2012
+  * @version V1.1.0
+  * @date    22-December-2021
   * @brief   CMSIS Cortex-M4 Device Peripheral Access Layer Header File. 
   *          This file contains all the peripheral registers definitions, bits 
   *          definitions and memory mapping for STM32F37x devices.
@@ -25,19 +25,15 @@
   ******************************************************************************
   * @attention
   *
-  * THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS
-  * WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE
-  * TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY
-  * DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING
-  * FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE
-  * CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.
+  * Copyright (c) 2012 STMicroelectronics.
+  * All rights reserved.
   *
-  * FOR MORE INFORMATION PLEASE READ CAREFULLY THE LICENSE AGREEMENT FILE
-  * LOCATED IN THE ROOT DIRECTORY OF THIS FIRMWARE PACKAGE.
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
   *
-  * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
-  ******************************************************************************  
-  */ 
+  ******************************************************************************
+  */
 
 /** @addtogroup CMSIS
   * @{
@@ -121,7 +117,7 @@
 #endif /* LSE_VALUE */     
 
 /**
- * @brief STM32F37x Standard Peripherals Library version number V1.0.0
+ * @brief STM32F37x Standard Peripherals Library version number V1.1.0
    */
 #define __STM32F37X_STDPERIPH_VERSION_MAIN   (0x01) /*!< [31:24] main version */                                  
 #define __STM32F37X_STDPERIPH_VERSION_SUB1   (0x00) /*!< [23:16] sub1 version */
@@ -5435,4 +5431,3 @@ typedef struct
   * @}
   */
 
-/******************* (C) COPYRIGHT 2012 STMicroelectronics *****END OF FILE****/

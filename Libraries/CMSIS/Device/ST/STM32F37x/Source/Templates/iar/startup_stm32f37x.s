@@ -1,8 +1,8 @@
 ;/******************** (C) COPYRIGHT 2012 STMicroelectronics ********************
 ;* File Name          : startup_stm32f37x.s
 ;* Author             : MCD Application Team
-;* Version            : V1.0.0
-;* Date               : 20-September-2012
+;* Version            : V1.1.0
+;* Date               : 22-December-2021
 ;* Description        : STM32F37x Devices vector table for EWARM toolchain.
 ;*                      This module performs:
 ;*                      - Set the initial SP
@@ -12,20 +12,14 @@
 ;*                      After Reset the Cortex-M4 processor is in Thread mode,
 ;*                      priority is Privileged, and the Stack is set to Main.
 ;*******************************************************************************
-;  @attention
-; 
-;  Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
-;  You may not use this file except in compliance with the License.
-;  You may obtain a copy of the License at:
-; 
-;         http://www.st.com/software_license_agreement_liberty_v2
-; 
-;  Unless required by applicable law or agreed to in writing, software 
-;  distributed under the License is distributed on an "AS IS" BASIS, 
-;  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-;  See the License for the specific language governing permissions and
-;  limitations under the License.
-; 
+;
+; Copyright (c) 2012 STMicroelectronics.
+; All rights reserved.
+;
+; This software is licensed under terms that can be found in the LICENSE file
+; in the root directory of this software component.
+; If no LICENSE file comes with this software, it is provided AS-IS.
+;
 ;*******************************************************************************
 ;
 ;
@@ -539,4 +533,4 @@ FPU_IRQHandler
         B FPU_IRQHandler
         
         END
-;************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE*****
+

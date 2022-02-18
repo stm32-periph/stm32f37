@@ -2,8 +2,8 @@
   ******************************************************************************
   * @file    stm32f37x_sdadc.c
   * @author  MCD Application Team
-  * @version V1.0.0
-  * @date    20-September-2012
+  * @version V1.1.0
+  * @date    22-December-2021
   * @brief   This file provides firmware functions to manage the following 
   *          functionalities of the Sigma-Delta Analog to Digital Convertor
   *          (SDADC) peripherals:
@@ -25,9 +25,9 @@
         RCC_APB1PeriphClockCmd() function
         e.g.  To enable access to SDADC1 registers use
         RCC_APB1PeriphClockCmd(RCC_APB1Periph_SDADC1, ENABLE);
-    (#) The SDADCs are clocked by APB1.
+    (#) The SDADCs are clocked by SYSCLK.
         In order to get the SDADC running at the typical frequency (6 MHz
-        in fast mode), use SDADC prescaler by calling RCC_SDADCCLKConfig() function
+        in normal mode), use SDADC prescaler by calling RCC_SDADCCLKConfig() function
         e.g. if APB1 is clocked at 72MHz, to get the SDADC running at 6MHz
         configure the SDADC prescaler at 12 by calling 
         RCC_SDADCCLKConfig(RCC_SDADCCLK_SYSCLK_Div12);
@@ -66,22 +66,15 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; COPYRIGHT 2012 STMicroelectronics</center></h2>
+  * Copyright (c) 2012 STMicroelectronics.
+  * All rights reserved.
   *
-  * Licensed under MCD-ST Liberty SW License Agreement V2, (the "License");
-  * You may not use this file except in compliance with the License.
-  * You may obtain a copy of the License at:
-  *
-  *        http://www.st.com/software_license_agreement_liberty_v2
-  *
-  * Unless required by applicable law or agreed to in writing, software 
-  * distributed under the License is distributed on an "AS IS" BASIS, 
-  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  * See the License for the specific language governing permissions and
-  * limitations under the License.
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
   *
   ******************************************************************************
-  */ 
+  */
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f37x_sdadc.h"
@@ -1435,4 +1428,3 @@ void SDADC_ClearITPendingBit(SDADC_TypeDef* SDADCx, uint32_t SDADC_IT)
   * @}
   */
 
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
